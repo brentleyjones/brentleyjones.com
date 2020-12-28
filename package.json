@@ -1,0 +1,15 @@
+{
+  "name": "brentleyjones.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --no-open --no-notify --port 8080 --server '_site' --files '_site'"
+  },
+  "keywords": [],
+  "author": "Brentley Jones",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
