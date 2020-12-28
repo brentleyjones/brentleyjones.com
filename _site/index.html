@@ -120,10 +120,20 @@
       a { color: unset; font-weight: 400; text-decoration: none; }
       a:hover { text-decoration: underline; }
       .nw { white-space: nowrap; }
+      .apple { color: #000; }
+      .github { color: #24292e; }
       @media (min-width: 414px) { body { font-size: 1.5em; } }
       @media (min-width: 640px) { body { font-size: 2em; } }
       @media (min-width: 768px) { body { font-size: 3em; } }
       @media (min-width: 1024px) { body { font-size: 4em; } }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background: #171718;
+          color: #e5e5e5;
+        }
+        .apple { color: #fff; }
+        .github { color: #f0f6fc; }
+      }
     </style>
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
@@ -134,11 +144,11 @@
     <meta name="theme-color" content="#ffffff"/>
   </head>
   <body>
-      <p><span class="nw">👋 Hello</span>, I'm Brentley Jones! I'm a software engineer specializing in client tooling for <span class="nw" style="color: #000000"><span class="fab fa-apple"></span> Apple</span> platforms.</p>
     <div style="margin: 0.5em 0.75em; max-width: 28ch;">
+      <p><span class="nw">👋 Hello</span>, I'm Brentley Jones! I'm a software engineer specializing in client tooling for <span class="nw apple"><span class="fab fa-apple"></span> Apple</span> platforms.</p>
       <ul>
         <li>Read my <span class="nw" style="color: #dc2626"><span class="fas fa-file-alt"></span> <a href="https://brentley.dev">blog</a></span>.</li>
-        <li>Look at my code on <span class="nw" style="color: #24292e"><span class="fab fa-github"></span> <a href="https://www.github.com/brentleyjones">GitHub</a></span>.</li>
+        <li>Look at my code on <span class="nw github"><span class="fab fa-github"></span> <a href="https://www.github.com/brentleyjones">GitHub</a></span>.</li>
         <li>Follow me on <span class="nw" style="color: #1da1f2"><span class="fab fa-twitter"></span> <a href="https://www.twitter.com/brentleyjones">Twitter</a></span>.</li>
         <li>Check me out on <span class="nw" style="color: #0e76a8"><span class="fab fa-linkedin"></span> <a href="https://www.linkedin.com/in/brentleyjones/">LinkedIn</a></span>.</li>
         <li>Write me an <span class="nw" style="color: #fbbc05"><span class="fas fa-paper-plane"></span> <a href="mailto:contact@brentleyjones.com">email</a></span>.</li>
